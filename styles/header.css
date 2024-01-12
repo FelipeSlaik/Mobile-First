@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .container{
@@ -21,4 +22,34 @@
 
 .container_imagem{
     padding: 1rem;
+}
+
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+/*Checked verifica se o checkbox esta preenchido e vai ao lista-menu e adiciona display:block*/
+.container_botao:checked~.lista-menu{
+    display: block;
+}
+
+.lista-menu_titulo, .lista-menu_item{
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu_titulo{
+    color: var(--laranja);
+}
+
+.lista-menu_link{
+   background: var(--azul-degrade);
+   -webkit-background-clip: text;/*Aplica só onde tiver textos*/
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   /*webkit para funcionar em outros navegadores*/
+    text-transform: uppercase;
 }
