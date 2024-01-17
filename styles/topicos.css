@@ -27,3 +27,14 @@
     text-decoration: none;
     font-weight: 700;
 }
+
+@media screen and (min-width: 1024px) {
+    .tópicos_titulo{
+        font-size: 24px;
+    }
+
+    .tópicos_link{
+        font-size: 29px;
+    }
+    
+}
